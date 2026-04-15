@@ -102,7 +102,7 @@ async def buscar(ctx, *, nombre):
     print(resultados)
 
     embed = discord.Embed(
-        title=f"🔍 Resultados para: {nombre}",
+        title=f"Resultados para: {nombre}",
         color=discord.Color.orange()
     )
 
