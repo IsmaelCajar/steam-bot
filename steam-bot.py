@@ -61,7 +61,7 @@ async def juego(ctx, *, nombre):
             busqueda = await r.json()
 
         if busqueda["total"] == 0:
-            await ctx.send(f"❌ No encontré ningún juego llamado **{nombre}**.")
+            await ctx.send(f"No encontré ningún juego llamado **{nombre}**.")
             return
 
         appid = busqueda["items"][0]["id"]
@@ -94,7 +94,7 @@ async def buscar(ctx, *, nombre):
             datos = await r.json()
 
     if datos["total"] == 0:
-        await ctx.send(f"❌ No encontré resultados para **{nombre}**.")
+        await ctx.send(f"No encontré resultados para **{nombre}**.")
         return
 
     resultados = datos["items"][:5]
@@ -130,11 +130,11 @@ async def buscar(ctx, *, nombre):
 @client.event
 async def on_command_error(ctx, error):
     if isinstance(error, commands.CommandNotFound):
-        await ctx.send("❌ Ese comando no existe. Usa `!ayuda` para ver los disponibles.")
+        await ctx.send("Ese comando no existe. Usa `!ayuda` para ver los disponibles.")
     elif isinstance(error, commands.MissingRequiredArgument):
-        await ctx.send(f"⚠️ Te faltó un argumento. Uso correcto: `!{ctx.command.name} <nombre>`")
+        await ctx.send(f"Te faltó un argumento. Uso correcto: `!{ctx.command.name} <nombre>`")
     else:
-        await ctx.send("⚠️ Ocurrió un error inesperado.")
+        await ctx.send(" Ocurrió un error inesperado.")
         print(f"Error: {error}")
 
 @client.command()
