@@ -1,4 +1,4 @@
-# 🎮 Steam Bot — Bot de Discord
+# Steam Bot — Bot de Discord
 
 Bot de Discord que consulta información de juegos en tiempo real usando la API pública de Steam.
 
