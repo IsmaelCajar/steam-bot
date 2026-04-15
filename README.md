@@ -30,7 +30,7 @@ pip install -r requirements.txt
 ```
 3. Coloca tu token en el archivo `steam-bot.py`:
 ```python
-TOKEN = "TU_TOKEN_AQUI"
+TOKEN = "COLOCAR TOKEN AQUI"
 ```
 4. Ejecuta el bot:
 ```bash
