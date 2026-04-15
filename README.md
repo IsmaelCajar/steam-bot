@@ -32,7 +32,7 @@ pip install -r requirements.txt
 ```python
 TOKEN = "COLOCAR TOKEN AQUI"
 ```
-4. Ejecuta el bot:
+4. Ejecuta el Bot:
 ```bash
 python steam-bot.py
 ```
