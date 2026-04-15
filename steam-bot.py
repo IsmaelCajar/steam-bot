@@ -32,7 +32,7 @@ async def populares(ctx):
         juegos = datos["response"]["ranks"][:5]
 
         embed = discord.Embed(
-            title="🎮 Top 5 juegos más jugados en Steam",
+            title="Top 5 juegos más jugados en Steam",
             color=discord.Color.blue()
         )
 
@@ -78,8 +78,8 @@ async def juego(ctx, *, nombre):
         )
 
         precio = data.get("price_overview", {}).get("final_formatted", "Gratis")
-        embed.add_field(name="💰 Precio", value=precio, inline=True)
-        embed.add_field(name="🎮 Géneros", value=", ".join(g["description"] for g in data.get("genres", [])), inline=True)
+        embed.add_field(name="Precio", value=precio, inline=True)
+        embed.add_field(name="Géneros", value=", ".join(g["description"] for g in data.get("genres", [])), inline=True)
         embed.set_thumbnail(url=data.get("header_image", ""))
         embed.set_footer(text="Datos obtenidos de la API de Steam")
 
